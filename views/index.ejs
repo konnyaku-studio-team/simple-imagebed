@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title><%=website_title%>——图片上传</title>
+    </head>
+    <body>
+        <h1><%=website_title%></h1>
+        <h2>图片上传</h2>
+        <form action="/upload/images" method="POST" enctype="multipart/form-data">
+            <input type="file" accept="image/*" name="images" multiple>
+            <input type="submit" value="上传">
+        </form>
+    </body>
+</html>
